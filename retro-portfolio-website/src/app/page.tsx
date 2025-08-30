@@ -205,14 +205,14 @@ function HeroAbout() {
             />
             <div className="mt-6 flex flex-wrap gap-3">
               <button
-                className="rounded-2xl bg-lime-300 text-black hover:bg-lime-200"
+                className="rounded-2xl bg-lime-300 text-black hover:bg-lime-200 p-2 flex align-items-center"
                 onMouseEnter={() => Sound.play(Sound.beep)}
               >
                 <Rocket className="h-4 w-4 mr-2" />
                 Hire Me
               </button>
               <button
-                className="rounded-2xl bg-white/10 hover:bg-white/20"
+                className="rounded-2xl bg-white/10 hover:bg-white/20 p-2 flex align-items-center"
                 onMouseEnter={() => Sound.play(Sound.beep)}
               >
                 <TerminalSquare className="h-4 w-4 mr-2" />
@@ -456,14 +456,14 @@ function ProjectCard({ i }: { i: number }) {
         </div>
         <div className="mt-6 flex gap-3">
           <button
-            className="rounded-xl bg-white text-black hover:bg-white/90"
+            className="rounded-xl bg-white text-black hover:bg-white/90 flex align-items-center p-2"
             onMouseEnter={() => Sound.play(Sound.key)}
           >
             <Code2 className="h-4 w-4 mr-2" />
             Source
           </button>
           <button
-            className="rounded-xl bg-white/10 hover:bg-white/20"
+            className="rounded-xl bg-white/10 hover:bg-white/20 p-2"
             onMouseEnter={() => Sound.play(Sound.key)}
           >
             Live Demo
@@ -489,7 +489,7 @@ function Arcade() {
   const [tab, setTab] = useState<Tab>("Snake");
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 w-[600px]">
       <div className="flex gap-2 flex-wrap">
         {tabs.map((t) => (
           <button
@@ -658,7 +658,7 @@ function SnakeGame() {
       />
       <div className="flex gap-2">
         <button
-          className="rounded-xl bg-white text-black"
+          className="rounded-xl bg-white text-black p-2"
           onClick={() => {
             setRunning(true);
             Sound.play(Sound.beep);
@@ -667,7 +667,7 @@ function SnakeGame() {
           Start
         </button>
         <button
-          className="rounded-xl bg-white/10"
+          className="rounded-xl bg-white/10 p-2"
           onClick={() => {
             setRunning(false);
             Sound.play(Sound.key);
@@ -801,7 +801,7 @@ function PongGame() {
       />
       <div className="flex gap-2">
         <button
-          className="rounded-xl bg-white text-black"
+          className="rounded-xl bg-white text-black p-2"
           onClick={() => {
             setRunning(true);
             Sound.play(Sound.beep);
@@ -810,7 +810,7 @@ function PongGame() {
           Start
         </button>
         <button
-          className="rounded-xl bg-white/10"
+          className="rounded-xl bg-white/10 p-2"
           onClick={() => {
             setRunning(false);
             Sound.play(Sound.key);
@@ -963,7 +963,7 @@ function BreakoutGame() {
       />
       <div className="flex gap-2">
         <button
-          className="rounded-xl bg-white text-black"
+          className="rounded-xl bg-white text-black p-2"
           onClick={() => {
             setRunning(true);
             Sound.play(Sound.beep);
@@ -972,7 +972,7 @@ function BreakoutGame() {
           Start
         </button>
         <button
-          className="rounded-xl bg-white/10"
+          className="rounded-xl bg-white/10 p-2"
           onClick={() => {
             setRunning(false);
             Sound.play(Sound.key);
@@ -1169,7 +1169,7 @@ function TetrisGame() {
       />
       <div className="flex gap-2">
         <button
-          className="rounded-xl bg-white text-black"
+          className="rounded-xl bg-white text-black p-2"
           onClick={() => {
             setRunning(true);
             Sound.play(Sound.beep);
@@ -1178,7 +1178,7 @@ function TetrisGame() {
           Start
         </button>
         <button
-          className="rounded-xl bg-white/10"
+          className="rounded-xl bg-white/10 p-2"
           onClick={() => {
             setRunning(false);
             Sound.play(Sound.key);
@@ -1364,7 +1364,7 @@ function Contact() {
               <TerminalInput label="Subject" name="subject" />
               <TerminalTextarea label="Your Message" name="message" />
               <button
-                className="rounded-xl bg-white text-black hover:bg-white/90 w-max"
+                className="rounded-xl bg-white text-black hover:bg-white/90 w-max p-2 flex align-items-center"
                 onMouseEnter={() => Sound.play(Sound.key)}
               >
                 <Mail className="h-4 w-4 mr-2" />
